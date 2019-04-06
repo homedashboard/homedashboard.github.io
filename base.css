@@ -1,0 +1,350 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin:0;
+    /*background-color: black;*/
+    font-family: "Segoe UI",Arial,sans-serif;
+    color: white;
+    font-size: 3vh;
+}
+
+/*body {
+    perspective: 1px;
+    transform-style: preserve-3d !important;
+}*/
+
+@media screen and (min-width: 320px) {
+    html, body {
+        font-size: 3vh;
+    }
+    navbar {
+        position: relative !important;
+    }
+}
+@media screen and (min-width: 800px) {
+    html, body {
+        font-size: 18px;
+    }
+    navbar {
+        position: relative !important;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+.fullpage {
+    width: 100%;
+    height: 100%;
+}
+
+.centeredcolumn {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+.epicbg {
+    background: rgba(24,31,133,1);
+    background: -moz-linear-gradient(-45deg, rgba(24,31,133,1) 0%, rgba(24,31,133,1) 19%, rgba(239,1,124,1) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(24,31,133,1)), color-stop(19%, rgba(24,31,133,1)), color-stop(100%, rgba(239,1,124,1)));
+    background: -webkit-linear-gradient(-45deg, rgba(24,31,133,1) 0%, rgba(24,31,133,1) 19%, rgba(239,1,124,1) 100%);
+    background: -o-linear-gradient(-45deg, rgba(24,31,133,1) 0%, rgba(24,31,133,1) 19%, rgba(239,1,124,1) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(24,31,133,1) 0%, rgba(24,31,133,1) 19%, rgba(239,1,124,1) 100%);
+    background: linear-gradient(135deg, rgba(24,31,133,1) 0%, rgba(24,31,133,1) 19%, rgba(239,1,124,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#181f85', endColorstr='#ef017c', GradientType=1 );
+    position: fixed !important;
+    /*background-attachment: fixed;
+    position: fixed; top: 0px; left: 0px;  */
+    z-index: -80;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background: #ddd;
+    color: black;
+}
+
+.bottombar {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+    width: 100%;
+    z-index: 2;
+}
+
+.bottombar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.bottombar a:hover {
+    background: #ddd;
+    color: black;
+}
+
+.logo:hover {
+    background: #d00 !important;
+    color: white !important;
+}
+
+.login {
+    float: right !important;
+}
+
+.login:hover {
+    background: #d00 !important;
+    color: white !important;
+}
+
+.pad {
+    padding: 16px;
+}
+
+.largepad {
+    padding: 40px;
+}
+
+.topmenumargin {
+    margin-top: 30px;
+}
+
+.main {
+    /*height: 1500px; /* Used in this example to enable scrolling */
+    position: relative;
+}
+
+.blackbg {
+    background-color: black;
+}
+
+.boxshadow {
+    -webkit-box-shadow: 0px 0px 30px 3px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 0px 30px 3px rgba(0,0,0,1);
+    box-shadow: 0px 0px 30px 3px rgba(0,0,0,1);
+}
+
+.bigshow {
+    text-align: center;
+    vertical-align: center;
+    height: 30vw;
+    display: block;
+}
+
+.genre {
+    /*display: block;*/
+    color: #f2f2f2;
+    /*text-align: left;*/
+    padding: 14px 14px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.genre:hover {
+    background: #ddd;
+    color: black;
+}
+
+
+.backg {
+    position: absolute;
+    background-position: top;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+    width: 1200px;
+}
+
+.backg:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 1)); /* For Chrome 25 and Safari 6, iOS 6.1, Android 4.3 */
+    background-image:    -moz-linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 1)); /* For Firefox (3.6 to 15) */
+    background-image:      -o-linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 1)); /* For old Opera (11.1 to 12.0) */
+    background-image:         linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 1)); /* Standard syntax; must be last */
+}
+
+/*.backg {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;*/
+/*
+.backg:before {
+  /*content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;*/
+  /*background-image: linear-gradient(#326279,#000000);*/
+  /*background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 1));*/
+  /*background-image: linear-gradient(rgba(60, 80, 120, 0),rgba(0, 0, 0, 255));*/
+  /*
+background-image: -webkit-linear-gradient(top, hsl(0, 80%, 70%), #bada55); / For Chrome 25 and Safari 6, iOS 6.1, Android 4.3 /
+background-image:    -moz-linear-gradient(top, hsl(0, 80%, 70%), #bada55); / For Firefox (3.6 to 15) /
+background-image:      -o-linear-gradient(top, hsl(0, 80%, 70%), #bada55); / For old Opera (11.1 to 12.0) /
+background-image:         linear-gradient(to bottom, hsl(0, 80%, 70%), #bada55); / Standard syntax; must be last /
+*/
+/*}*/
+
+.button {
+    position: absolute;
+    padding: 20px;
+    width: 200px;
+    height: 80px;
+    overflow: hidden;
+    background-color: green;
+    top: 100px;
+    right: 0;
+}
+
+.button:hover {
+    background-color: darkgreen;
+}
+
+.cataloggrid {
+    flex-flow: row wrap;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.casecontainer {
+    position: relative;
+    padding: 20px;
+    width: 560px;
+    height: 200px;
+    overflow: hidden;
+    -webkit-filter: contrast(45%); /* Safari 6.0 - 9.0 */
+    filter: contrast(45%);
+}
+
+.casecontainer:hover {
+    -webkit-filter: contrast(100%) !important; /* Safari 6.0 - 9.0 */
+    filter: contrast(100%) !important;
+}
+
+.case {
+    width: 100%;
+}
+
+.centered {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.centeredrel {
+    position: relative;
+    top: 30%;
+    text-align: center;
+    font-size: 72px !important;
+}
+
+.title {
+    font-size: 32px;
+    color: #fff;
+    text-shadow: 0px 0px 10px #000;
+}
+
+.slidebg {
+    display: block;
+    background-position: top;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 16px 16px;
+    height:700px;
+}
+
+.slide1 {
+  background-image: url("data/starwars.jpg");
+  background-attachment: fixed;
+}
+
+.slide2 {
+  background-image: url("data/tt0060196.jpg");
+  background-attachment: scroll;
+}
+
+.slide3 {
+  background-image: url("data/lotr.jpg");
+  background-attachment: fixed;
+}
+
+.slide4 {
+  background-image: url("data/Action.jpg");
+  background-attachment: scroll;
+}
+
+.slide5 {
+  background-image: url("data/Sci-Fi.jpg");
+  background-attachment: fixed;
+}
+
+.leftfloat {
+  position: absolute;
+  top: 70%;
+  left: -10%;
+  padding: 10px;
+  border-radius: 5px;
+  transform: translateZ(0px) scale(.50) translateX(0%) translateY(0%) rotate(0deg);
+}
+
+.rightfloat {
+  position: absolute;
+  top: 70%;
+  right: -10%;
+  padding: 10px;
+  border-radius: 5px;
+  transform: translateZ(0px) scale(.50) translateX(0%) translateY(0%) rotate(180deg);
+}
+
+/********************************************************************/
+/********************************************************************/
+/*INPUT*/
+/********************************************************************/
+/********************************************************************/
+
+input {
+  width:100%;
+  margin: 8px 0;
+  background:white;
+  margin-bottom:20px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 2.7vh;
+  padding: 12px 20px;
+}
